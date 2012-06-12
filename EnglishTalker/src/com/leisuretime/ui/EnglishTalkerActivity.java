@@ -64,8 +64,8 @@ public class EnglishTalkerActivity extends TabActivity implements
 				RecommendActivity.class), R.string.recommend);
 		setIndicator(R.drawable.tab_channel, 1, new Intent(this,
 				ChannelActivity.class), R.string.channel);
-		setIndicator(R.drawable.tab_search, 2, new Intent(this,
-				SearchActivity.class), R.string.search);
+//		setIndicator(R.drawable.tab_search, 2, new Intent(this,
+//				SearchActivity.class), R.string.search);
 		setIndicator(R.drawable.tab_personal, 3, new Intent(this,
 				PersonalActivity.class), R.string.peraonal);
 

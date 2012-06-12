@@ -5,4 +5,6 @@
 <color name="tab_red">#fff60c0c</color>
 <color name="tab_white">#ffe3e1e1</color>
 <color name="title_white">#ffffffff</color>
+<color name="toggle_text_white">#ffffffff</color>
+<color name="toggle_text_black">#ff000000</color>
 </resources>

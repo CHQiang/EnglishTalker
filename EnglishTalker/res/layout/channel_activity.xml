@@ -4,6 +4,148 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="channel"
+            android:textColor="@color/title_white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_details_series"
+            android:padding="10dip"
+            android:text="movie"
+            android:textColor="@color/tab_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_movie"
+            android:src="@drawable/dividerline" />
+
+        <Button
+            android:id="@+id/btn_drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img1"
+            android:background="@drawable/bg_details_series"
+            android:padding="10dip"
+            android:text="drama"
+            android:textColor="@color/tab_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_drama"
+            android:src="@drawable/dividerline" />
+
+        <Button
+            android:id="@+id/btn_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img2"
+            android:background="@drawable/bg_details_series"
+            android:padding="10dip"
+            android:text="speech"
+            android:textColor="@color/tab_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_speech"
+            android:src="@drawable/dividerline" />
+
+        <ImageView
+            android:id="@+id/img_active_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_movie"
+            android:layout_alignRight="@id/btn_movie"
+            android:layout_marginTop="34dip"
+            android:src="@drawable/active" />
+
+        <ImageView
+            android:id="@+id/img_active_drama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_drama"
+            android:layout_alignRight="@id/btn_drama"
+            android:layout_marginTop="34dip"
+            android:src="@drawable/active" />
+
+        <ImageView
+            android:id="@+id/img_active_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/btn_speech"
+            android:layout_alignRight="@id/btn_speech"
+            android:layout_marginTop="34dip"
+            android:src="@drawable/active" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/bar_line_red" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channel_toggle_redleft"
+            android:text="New"
+            android:textColor="@color/toggle_text_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/channel_toggle_pressedright"
+            android:text="Popular"
+            android:textColor="@color/toggle_text_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>
